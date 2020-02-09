@@ -1,0 +1,137 @@
+body{
+    margin: 10%;
+    font-family: 'Raleway', sans-serif  ;
+    transition : all 5s ease-in-out;
+}
+.container {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+      "main sidebar";
+    height: fit-content;
+    border : 4px solid #004445;
+    border-color : #004445;
+    padding:10px;
+    height : fit-content;
+    background-color: #ffd800;
+  }
+
+#hidden{
+    color : #004445;
+    display: none;
+    transition : all 5s ease-in-out;
+}
+
+#header{
+    grid-area: main;
+    transition : all 0.4s ease-in-out;
+    height: fit-content;
+}
+#photo {
+    grid-area : sidebar;
+    transition : all 0.4s ease-in-out;
+    text-align : right  
+}
+#michael {
+    transition : all 0.4s ease-in-out;
+}
+#michael:hover{
+        width : 210px ; 
+        height : 260px ;
+
+
+}
+
+.container_4 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto ;
+    grid-template-areas: 
+    "UL . UR" ". S . " "DL . DR";
+    width : 100%; 
+    
+
+}
+.sum-up {
+    grid-area : UL;
+    border : 4px solid #2c7873;
+    border-radius: 8px;
+    margin : 10px;
+    padding : 10px;
+    background-color: #ffd800;
+    transition : all 0.4s ease-in-out;
+}
+
+.sum-up:hover {
+    background-color: #004445;
+    color: #ffd800;
+}
+
+.spinning {
+    grid-area : S;
+    display : flex ;
+    transition : all ease-in-out 10s
+}
+.Formation {
+    grid-area : UR;
+    border : 4px solid #2c7873;
+    border-radius: 8px;
+    border-color : #6fb98f;
+    margin : 10px;
+    padding : 10px;
+    background-color: #ffd800;
+    color : #111111;
+    transition : all 0.4s ease-in-out ; 
+    width : auto ; 
+}
+
+.Formation:hover{
+    background-color: #004445;
+    color: #ffd800;
+}
+
+.hobbies {
+    grid-area: DL;
+    border : 4px solid #2c7873;
+    border-radius: 8px;
+    border-color : #6fb98f;
+    margin : 10px;
+    padding : 10px;
+    background-color: #ffd800;
+    color : #111111;
+    transition : all 0.4s ease-in-out;
+    height: fit-content;
+}
+
+.hobbies:hover{
+    background-color: #004445;
+    color: #ffd800;
+}
+.resume {
+    grid-area : DR;
+    border : 4px solid #2c7873;
+    border-radius: 8px;
+    margin : 10px;
+    padding : 10px;
+    background-color: #ffd800;
+    transition : all 0.4s ease-in-out ; 
+    height  : fit-content
+}
+
+.resume:hover{
+    background-color: #004445;
+    color: #ffd800;
+
+}
+.resume ul{
+    list-style-image: url('cross.png');
+}
+
+.resume li{
+    transition : all 0.4s ease-in-out
+
+}
+.resume li:hover{
+    font-size : large;
+}
